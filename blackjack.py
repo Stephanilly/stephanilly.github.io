@@ -16,8 +16,7 @@ import random
 import blackjack_art
 from replit import clear
 
-#Hint 4: Create a deal_card() function that uses the List below to *return* a random card.
-#11 is the Ace.
+# Create a deal_card() function that uses the List below to return a random card.
 def deal_card():
   cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
   # card_art = [blackjack_art.ace_card, blackjack_art.card_2, blackjack_art.card_3, blackjack_art.card_4,
@@ -39,24 +38,24 @@ def deal_card():
 def compare(user_score, computer_score):
 # If the computer and user both have the same score, then it's a draw. 
   if user_score == computer_score:
-    return "Draw"
-# If the computer has a blackjack (0), then the user loses. 
-  elif computer_score == 0:
-    return "Computer wins with a blackjack"
-# If the user has a blackjack (0), then the user wins.
-  elif user_score == 0:
-    return "You win with a blackjack"
+    return "Draw. :|"
 # If the user_score is over 21, then the user loses. 
   elif user_score > 21:
-    return "Bust! You lose"
+    return "Bust! You lose! :("
+# If the computer has a blackjack (0), then the user loses. 
+  elif computer_score == 0:
+    return "Dealer wins with a blackjack! :("
+# If the user has a blackjack (0), then the user wins.
+  elif user_score == 0:
+    return "You win with a blackjack! :)"
 # If the computer_score is over 21, then the computer loses. 
   elif computer_score > 21:
-    return "Computer busts! You win"
+    return "Dealer busts! You win! :)"
 # If none of the above, then the player with the highest score wins.
   elif user_score > computer_score:
-    return "You win"
+    return "You win! :)"
   else:
-    return "Computer wins"
+    return "Dealer wins! :("
 
 #Hint 6: Create a function called calculate_score() that takes a List of cards as input and returns the score. 
 #Look up the sum() function to help you do this.
@@ -81,14 +80,17 @@ def play_game():
   
 # If the computer or the user has a blackjack (0) or if the user's score is over 21, then the game ends.
   computer_score = calculate_score(computer_cards)
-  print(f"Computer's first card is: {computer_cards[0]}")
+  print(f"  Dealer's first card is: {computer_cards[0]}")
   is_game_over = False
+  bust = False
   while not is_game_over:
     user_score = calculate_score(user_cards)
-    print(f"Your cards: {user_cards}, current score: {user_score}")
+    print(f"  Your cards: {user_cards}, current score: {user_score}")
     
     if user_score == 0 or computer_score == 0 or user_score > 21:
       is_game_over = True
+      if user_score > 21:
+        bust = True
   
 # If the game has not ended, ask the user if they want to draw another card. 
 # If yes, then use the deal_card() function to add another card to the user_cards List. 
@@ -102,12 +104,12 @@ def play_game():
     
 # Once the user is done, it's time to let the computer play. 
 # The computer should keep drawing cards as long as it has a score less than 17.
-  while computer_score != 0 and computer_score < 17:
+  while not bust and computer_score != 0 and computer_score < 17:
     computer_cards.append(deal_card())
     computer_score = calculate_score(computer_cards)
   
-  print(f"Your final hand: {user_cards}, final score: {user_score}")
-  print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
+  print(f"  Your final hand: {user_cards}, final score: {user_score}")
+  print(f"  Dealer's final hand: {computer_cards}, final score: {computer_score}")
   print(compare(user_score, computer_score))
 
 
