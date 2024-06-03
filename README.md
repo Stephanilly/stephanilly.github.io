@@ -4,7 +4,7 @@
 * [Guess the number](#guess-the-number)
 * [Hangman](#hangman)
 * [Higher or lower](#higher-or-lower)
-* Quiz (True/False)
+* [Quiz (True/False)](#quiz-truefalse)
 * [Rock Paper Scissors](#rock-paper-scissors)
 * [Treasure Island](#treasure-island)
 
@@ -14,6 +14,7 @@
 * Calculator
 * Coffee machine
 * Silent auction
+
 
 #Games
 
