@@ -6,7 +6,9 @@
 * [Higher or lower](#higher-or-lower)
 * [Quiz (True/False)](#quiz-truefalse)
 * [Rock Paper Scissors](#rock-paper-scissors)
+* [Snake](#snake)
 * [Treasure Island](#treasure-island)
+* [Turtle Race](#turtle-race)
 
 # Not games list
 
@@ -51,6 +53,14 @@ Pick a number as prompted, the computer will pick a random number, then they'll 
 You can find the "official" rules of the game on [the World Rock Paper Scissors Association website.](https://wrpsa.com/the-official-rules-of-rock-paper-scissors/)
 
 
+## Snake
+
+Traditional snake game; eat food to score and grow your snake, avoid collisions with the walls or your own body.
+
 ## Treasure Island
 
 Text-based choose your own adventure game with simple logic and ASCII art. Follow the prompts to try to find the treasure.
+
+## Turtle Race
+
+Choose a color, and watch the turtles randomly race across the screen to see if your turtle will win.
