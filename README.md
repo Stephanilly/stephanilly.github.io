@@ -4,6 +4,7 @@
 * [Guess the number](#guess-the-number)
 * [Hangman](#hangman)
 * [Higher or lower](#higher-or-lower)
+* [Pong](#pong)
 * [Quiz (True/False)](#quiz-truefalse)
 * [Rock Paper Scissors](#rock-paper-scissors)
 * [Snake](#snake)
@@ -41,6 +42,10 @@ Pick a letter as prompted, if it's in the word, it will display where; otherwise
 
 Guess if option A or B has more followers on Instagram. Get a point for every correct guess, game ends with an incorrect guess.
 > Note: data is **not** updated.
+
+## Pong
+
+Classic pong game. Right player uses up and down keys, left player uses w and s keys. First to score 3 wins.
 
 ## Quiz (True/False)
 
