@@ -10,6 +10,7 @@
 * [Snake](#snake)
 * [Treasure Island](#treasure-island)
 * [Turtle Race](#turtle-race)
+* [Turtler](#turtler)
 
 # Not games list
 
@@ -69,3 +70,7 @@ Text-based choose your own adventure game with simple logic and ASCII art. Follo
 ## Turtle Race
 
 Choose a color, and watch the turtles randomly race across the screen to see if your turtle will win.
+
+## Turtler
+
+Frogger-like game; cross the road without being hit by 'cars'. Controlled with up and down arrow keys.
