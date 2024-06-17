@@ -3,8 +3,8 @@ FONT = ("Courier", 14)
 
 
 def reset():
-    from_label.config(text="° F")
-    to_label.config(text="° C")
+    from_label.config(text=" ")
+    to_label.config(text=" ")
     listbox.selection_clear(first=0, last=7)
     entry.delete(first=0, last=7)
     value.config(text="0")
@@ -53,7 +53,7 @@ entry = Entry(width=5, font=FONT)
 entry.focus()
 entry.grid(row=0, column=1)
 
-from_label = Label(text="° F", font=FONT)
+from_label = Label(text=" ", font=FONT)
 from_label.grid(row=0, column=2)
 
 eq_label = Label(text="is equal to", font=FONT)
@@ -62,7 +62,7 @@ eq_label.grid(row=1, column=0)
 value = Label(text=0, font=FONT)
 value.grid(row=1, column=1)
 
-to_label = Label(text="° C", font=FONT)
+to_label = Label(text=" ", font=FONT)
 to_label.grid(row=1,column=2)
 
 listbox = Listbox(height=3, exportselection=False)
