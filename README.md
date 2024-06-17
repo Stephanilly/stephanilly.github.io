@@ -14,6 +14,7 @@
 
 # Not games list
 
+* Converter
 * Cypher
 * Calculator
 * Coffee machine
@@ -74,3 +75,25 @@ Choose a color, and watch the turtles randomly race across the screen to see if 
 ## Turtler
 
 Frogger-like game; cross the road without being hit by 'cars'. Controlled with up and down arrow keys.
+
+# Not Games
+
+## Converter
+
+A GUI-based converter for several common unit conversions.
+
+## Cypher
+
+A Caesar cypher, named for its use as far back as ancient Rome. Also featured in 'A Christmas Story'.
+
+## Calculator
+
+A clunky/rudimentary calculator.
+
+## Coffee machine
+
+Program for a coin-operated coffee machine with text-based selection and secret commands 'report' and 'off'.
+
+## Silent auction
+
+A simple name & bid input that then returns the highest bidder and their bid.
