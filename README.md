@@ -14,11 +14,11 @@
 
 # Not games list
 
-* Converter
-* Cypher
-* Calculator
-* Coffee machine
-* Silent auction
+* [Converter](#converter)
+* [Cypher](#cypher)
+* [Calculator](#calculator)
+* [Coffee machine](#coffee-machine)
+* [Silent auction](#silent-auction)
 
 
 # Games
